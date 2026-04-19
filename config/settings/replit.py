@@ -7,7 +7,12 @@ DEBUG = False
 
 # Get Replit domain
 REPLIT_DOMAIN = os.getenv('REPLIT_OWNER', 'replit') + '.repl.co'
-ALLOWED_HOSTS = [REPLIT_DOMAIN, 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    REPLIT_DOMAIN,
+    'appbackend-2--afzalrehan779.replit.app',
+    'localhost',
+    '127.0.0.1',
+]
 
 # Database - Use SQLite on Replit (simpler, no external DB needed)
 DATABASES = {
