@@ -51,12 +51,12 @@ db.sqlite3-journal
 .replit.nix
 .upm
 
-# ML Models (too large for Replit)
-*.pt
-*.pth
-*.bin
-*.onnx
-model_ml/
+# ML Models (if too large, uncomment below)
+# *.pt
+# *.pth
+# *.bin
+# *.onnx
+# model_ml/
 
 # OS
 .DS_Store
