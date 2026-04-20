@@ -136,3 +136,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Vite default
 ]
 CORS_ALLOW_CREDENTIALS = True
+
+# External inference API used during report submission (image field: "image")
+WASTE_INFERENCE_API_URL = os.environ.get(
+    'WASTE_INFERENCE_API_URL',
+    'https://lab-4--t41175390.replit.app/api/inference/'
+)
+WASTE_INFERENCE_TIMEOUT = int(os.environ.get('WASTE_INFERENCE_TIMEOUT', '45'))
+WASTE_INFERENCE_FALLBACK_TO_LOCAL = os.environ.get(
+    'WASTE_INFERENCE_FALLBACK_TO_LOCAL',
+    'False'
+).lower() == 'true'
